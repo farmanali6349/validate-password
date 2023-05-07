@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/RESOURCES/images/bg.svg') no-repeat center center/cover;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.203);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.content .input-field {
+    width: 100%;
+    background: white;
+    position: relative;
+}
+
+.content .input-field img {
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+}
+
+.content input {
+    border: 0;
+    outline: 0;
+    background-color: white;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.content h3 {
+    margin-top: 30px;
+}
+
+.content p {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.content p img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.attribution {
+    padding: 5px 20px;
+    color: #f1f1f1;
+    background-color: #101010;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.attribution a {
+    color: rgb(75, 75, 214);
+}
+
+
+@media only screen and (max-width:480px) {
+
+
+    .content input {
+        font-size: 14px;
+    }
+
+    .content p {
+        padding: 5px 0;
+        font-size: 15px;
+    }
+}

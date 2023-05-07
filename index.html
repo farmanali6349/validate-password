@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validate</title>
+    <!-- fonts - Poppin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="RESOURCES/images/fav-icon.svg" type="image/x-icon">
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h2>Create Your Password</h2>
+            <p>Enter Your Password</p>
+            <div class="input-field">
+                <input type="password" name="password" id="password-field">
+                <img src="RESOURCES/images/hide.svg" id="password-img" onclick="showHidePassword('password-img', 'password-field')">
+            </div>
+            <p>Confirm Your Password</p>
+            <div class="input-field">
+                <input type="password" name="confirm-password" id="confirm-field">
+                <img src="RESOURCES/images/hide.svg" id="confirm-img" onclick="showHidePassword('confirm-img', 'confirm-field')">
+            </div>
+
+            <h3>Remarks</h3>
+            <p class="same-para"><img src="RESOURCES/images/cross.svg"> Both Passwords Are Same</p>
+            <p class="special-para"><img src="RESOURCES/images/cross.svg"> Speical Character</p>
+            <p class="uppercase-para"><img src="RESOURCES/images/cross.svg"> Uppercase Letter</p>
+            <p class="lowercase-para"><img src="RESOURCES/images/cross.svg"> Lowercase Letter</p>
+            <p class="numbers-para"><img src="RESOURCES/images/cross.svg"> Number</p>
+            <p class="length-para"><img src="RESOURCES/images/cross.svg"> Greater or Equal Than 8 Characters</p>
+
+        </div>
+        <p class="attribution">Developed by <a href="https://www.behance.net/farmanali6349">Farman Ali</a></p>
+    </div>
+
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
